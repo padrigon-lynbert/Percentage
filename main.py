@@ -1,4 +1,4 @@
-import os
+import os #working in here _ not yet finished
 
 def cls(): os.system('cls')
     # percentage = input("missing percentage: ")
