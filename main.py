@@ -1,8 +1,6 @@
 import os #working in here _ not yet finished
 
 def cls(): os.system('cls')
-    # percentage = input("missing percentage: ")
-    # value_of_percentage = input("missing value of percentage: ")
     
 #calculate/algorithm for missing
 def percentage(value_of_percentage, true_value):
