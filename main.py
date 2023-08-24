@@ -18,7 +18,7 @@ def look_for_value_of_percentage(percentage, true_value):
 def look_for_true_value(value_of_percentage, percentage):
     missing_true_value = (value_of_percentage/percentage) * 100
     
-#=-----------------------------------------------------------------------------------------=>
+#=-----------------------------------------------------------------------------------------=> working here
 def get_input():
     # global percentage, value_of_percentage, true_value
     # percentage, value_of_percentage, true_value = 0
