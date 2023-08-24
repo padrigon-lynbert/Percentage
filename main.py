@@ -46,14 +46,14 @@ def get_input():
             
         return value_of_percentage
 
-    # while True:
-    #     while True:
-    #         try:
-    #             choice = int(input("What is missing?\n\n<1> Missing %\n<2> Missing value of %\n<3> Missing true value\n<4> Quit\n\n: ")); break   
-    #         except ValueError: cls(); print("Invalid input. Please enter a valid number.")
+    while True:
+        while True:
+            try:
+                choice = int(input("What is missing?\n\n<1> Missing %\n<2> Missing value of %\n<3> Missing true value\n<4> Quit\n\n: ")); break   
+            except ValueError: cls(); print("Invalid input. Please enter a valid number.")
 
-    #     if choice in range(1, 5):
-    #         if choice == 1:
+        if choice in range(1, 5):
+            if choice == 1: print(f"{round(percentage(get_value_of_percentage(), get_true_value()), 2)}%"); break
                 
                     
 
