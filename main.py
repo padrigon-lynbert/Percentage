@@ -22,8 +22,6 @@ def true_value(value_of_percentage, percentage):
     
 #=-----------------------------------------------------------------------------------------=> working here
 def get_input():
-    # global percentage, value_of_percentage, true_value
-    # percentage, value_of_percentage, true_value = 0
     def get_percentage():
         while True: 
             try:
