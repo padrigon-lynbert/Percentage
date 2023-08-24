@@ -22,18 +22,43 @@ def look_for_true_value(value_of_percentage, percentage):
 def get_input():
     # global percentage, value_of_percentage, true_value
     # percentage, value_of_percentage, true_value = 0
-    while True:
+    def get_percentage():
+        while True: 
+            try:
+                value_of_percentage = float(input("Value of percentage: ")); break
+            except ValueError: cls(); print("Invalid input. Please enter a valid number."); continue
+     
+        return value_of_percentage
+    
+    def get_true_value():
+        while True: 
+            try:
+                true_value = float(input("True Value: ")); break
+            except ValueError: cls(); print("Invalid input. Please enter a valid number."); continue
+            
+        return true_value
+            
+    def get_value_of_percentage():
         while True:
             try:
-                choice = float(input("What is missing?\n\n<1> Missing %\n<2> Missing value of %\n<3> Missing true value\n<4> Quit\n\n: ")); break   
-            except ValueError: cls(); print("Invalid input. Please enter a valid number.")
+                value_of_percentage = float(input("Value of %: ")); break
+            except ValueError: cls(); print("Invalid input. Please enter a valid number."); continue
+            
+        return value_of_percentage
 
-        # if choice in range(1, 5): 
-        #     if choice == 1:
-        #         value_of_percentage = input("Value of percentage: ")
+    # while True:
+    #     while True:
+    #         try:
+    #             choice = int(input("What is missing?\n\n<1> Missing %\n<2> Missing value of %\n<3> Missing true value\n<4> Quit\n\n: ")); break   
+    #         except ValueError: cls(); print("Invalid input. Please enter a valid number.")
 
-        cls()
-        print("dfkjnd")
+    #     if choice in range(1, 5):
+    #         if choice == 1:
+                
+                    
+
+    #     cls()
+    #     print("dfkjnd")
         
 
 #=-----------------------------------------------------------------------------------------=>
