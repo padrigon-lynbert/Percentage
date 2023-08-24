@@ -4,24 +4,24 @@ def cls(): os.system('cls')
     # percentage = input("missing percentage: ")
     # value_of_percentage = input("missing value of percentage: ")
     
-
-def look_for_percentage(value_of_percentage, true_value):
+#calculate/algorithm for missing
+def percentage(value_of_percentage, true_value):
     missing_percentage = (value_of_percentage/true_value) * 100
     
     return missing_percentage
 
-def look_for_value_of_percentage(percentage, true_value):
+def value_of_percentage(percentage, true_value):
     missing_value = (percentage/100) * true_value
 
     return missing_value
 
-def look_for_true_value(value_of_percentage, percentage):
+def true_value(value_of_percentage, percentage):
     missing_true_value = (value_of_percentage/percentage) * 100
+    
+    return missing_true_value
     
 #=-----------------------------------------------------------------------------------------=> working here
 def get_input():
-    # global percentage, value_of_percentage, true_value
-    # percentage, value_of_percentage, true_value = 0
     def get_percentage():
         while True: 
             try:
@@ -46,14 +46,14 @@ def get_input():
             
         return value_of_percentage
 
-    # while True:
-    #     while True:
-    #         try:
-    #             choice = int(input("What is missing?\n\n<1> Missing %\n<2> Missing value of %\n<3> Missing true value\n<4> Quit\n\n: ")); break   
-    #         except ValueError: cls(); print("Invalid input. Please enter a valid number.")
+    while True:
+        while True:
+            try:
+                choice = int(input("What is missing?\n\n<1> Missing %\n<2> Missing value of %\n<3> Missing true value\n<4> Quit\n\n: ")); break   
+            except ValueError: cls(); print("Invalid input. Please enter a valid number.")
 
-    #     if choice in range(1, 5):
-    #         if choice == 1:
+        if choice in range(1, 5):
+            if choice == 1: print(f"{round(percentage(get_value_of_percentage(), get_true_value()), 2)}%"); break
                 
                     
 
