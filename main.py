@@ -4,19 +4,21 @@ def cls(): os.system('cls')
     # percentage = input("missing percentage: ")
     # value_of_percentage = input("missing value of percentage: ")
     
-
-def look_for_percentage(value_of_percentage, true_value):
+#calculate/algorithm for missing
+def percentage(value_of_percentage, true_value):
     missing_percentage = (value_of_percentage/true_value) * 100
     
     return missing_percentage
 
-def look_for_value_of_percentage(percentage, true_value):
+def value_of_percentage(percentage, true_value):
     missing_value = (percentage/100) * true_value
 
     return missing_value
 
-def look_for_true_value(value_of_percentage, percentage):
+def true_value(value_of_percentage, percentage):
     missing_true_value = (value_of_percentage/percentage) * 100
+    
+    return missing_true_value
     
 #=-----------------------------------------------------------------------------------------=> working here
 def get_input():
