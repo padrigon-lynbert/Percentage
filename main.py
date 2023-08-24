@@ -32,4 +32,4 @@ def run():
     print(f"true value: {look_for_true_value(value_of_percentage, percentage)}")
     
 
-run()
+# run()
