@@ -1,4 +1,4 @@
-import os #my very own library about percentages (very basic but it was fun to coding this)
+import os #my very own module about percentages (very basic but it was fun to coding this)
 
 def cls(): os.system('cls')
     
