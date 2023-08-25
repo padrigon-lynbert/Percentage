@@ -65,8 +65,3 @@ class Percentage:
    
 # run()
 
-# This is just a test
-
-class Hello:
-    def saySomethihng(word):
-        print(word)
