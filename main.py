@@ -18,7 +18,6 @@ def true_value(value_of_percentage, percentage):
     
     return missing_true_value
     
-#=-----------------------------------------------------------------------------------------=> working here
 def get_input():
     def get_percentage():
         while True: 
@@ -59,9 +58,6 @@ def get_input():
             else: cls(); quit()
         input("\n\n<ENTER>\n\n")
                 
-
-
-
 def run():
    get_input()
    
