@@ -23,10 +23,10 @@ def get_input():
     def get_percentage():
         while True: 
             try:
-                value_of_percentage = float(input("Value of percentage: ")); break
+                percentage = float(input("Percentage: ")); break
             except ValueError: cls(); print("Invalid input. Please enter a valid number."); continue
      
-        return value_of_percentage
+        return percentage
     
     def get_true_value():
         while True: 
@@ -45,28 +45,24 @@ def get_input():
         return value_of_percentage
 
     while True:
+        cls()
         while True:
+            cls()
             try:
                 choice = int(input("What is missing?\n\n<1> Missing %\n<2> Missing value of %\n<3> Missing true value\n<4> Quit\n\n: ")); break   
             except ValueError: cls(); print("Invalid input. Please enter a valid number.")
 
         if choice in range(1, 5):
-            if choice == 1: print(f"{round(percentage(get_value_of_percentage(), get_true_value()), 2)}%"); break
+            if choice == 1: print(f"{round(percentage(get_value_of_percentage(), get_true_value()), 2)}%")
+            elif choice == 2: print(f"% = {round(value_of_percentage(get_percentage(), get_true_value()), 2)}")
+            elif choice == 3: print(f"True vvalue = {true_value(get_value_of_percentage(), get_percentage())}")
+            else: cls(); quit()
+        input("\n\n<ENTER>\n\n")
                 
-                    
-
-    #     cls()
-    #     print("dfkjnd")
-        
-
-#=-----------------------------------------------------------------------------------------=>
 
 
-def run(): pass
-    # print(f"%: {look_for_percentage(value_of_percentage, true_value)}")
-    # print(f"value of %: {look_for_value_of_percentage(percentage, true_value)}")
-    # print(f"true value: {look_for_true_value(value_of_percentage, percentage)}")
-    
 
-# run()
-get_input()
+def run():
+   get_input()
+   
+run()
