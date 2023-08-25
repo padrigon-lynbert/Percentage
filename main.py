@@ -18,6 +18,7 @@ def true_value(value_of_percentage, percentage):
     
     return missing_true_value
     
+    
 def get_input():
     def get_percentage():
         while True: 
@@ -57,6 +58,7 @@ def get_input():
             elif choice == 3: print(f"True vvalue = {true_value(get_value_of_percentage(), get_percentage())}")
             else: cls(); quit()
         input("\n\n<ENTER>\n\n")
+                
                 
 def run():
    get_input()
